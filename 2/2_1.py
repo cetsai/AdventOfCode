@@ -2,7 +2,8 @@ def main():
     scores = [[4, 8, 3],
               [1, 5, 9],
               [7, 2, 6]]
-
+    
+    # should've used ord() instead of this
     mapping = {
         "X": 0,
         "Y": 1,
