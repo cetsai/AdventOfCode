@@ -1,3 +1,11 @@
+"""
+https://adventofcode.com/2023/day/1
+
+Each line in the input has at least one digit. We need to form a two 
+digit number by combining the first and last appearance of a digit.
+Final answer is the sum of these two digit numbers for all lines.
+"""
+
 import re
 
 def main():

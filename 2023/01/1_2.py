@@ -1,7 +1,11 @@
+"""
+Same as part 1, except digits can be spelled out e.g. "one" = "1"
+"""
+
 import re
 
 def main():
-    # keeping first and last letters as a small hack to handle cases like "twone"
+    # keeping first and last letters to handle cases like "twone"
     digit_map = {
         "one": "o1e",
         "two": "t2o",
