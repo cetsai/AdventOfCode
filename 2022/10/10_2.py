@@ -7,7 +7,7 @@ def main():
     display = np.zeros((6, 40))
     command = re.compile(r"addx (-?\d+)$")
     match = None
-    with open("10/input") as f:
+    with open("input") as f:
         file_iter = iter(f)
         for clock in range(240):
             if not command_cycles and match:

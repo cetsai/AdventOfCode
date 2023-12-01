@@ -12,7 +12,7 @@ def main():
 
     grid = np.full((25, 25, 25), False)
     total = 0
-    with open("18/input") as f:
+    with open("input") as f:
         for line in f:
             coord = np.array(list(map(int, line.rstrip().split(","))))
             grid[tuple(coord)] = True

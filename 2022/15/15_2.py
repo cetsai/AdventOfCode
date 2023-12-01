@@ -29,7 +29,7 @@ def find_ranges(sensors, row):
 
 def main():
     sensors = []
-    with open("15/input") as f:
+    with open("input") as f:
         for line in f:
             sensor_str, beacon_str = re.findall("x=(-?\d+), y=(-?\d+)", line)
             sensor, beacon = tuple(map(int, sensor_str)), tuple(map(int, beacon_str))

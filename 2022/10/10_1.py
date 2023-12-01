@@ -4,7 +4,7 @@ def main():
     score = 0
     clock = 1
     register = 1
-    with open("10/input") as f:
+    with open("input") as f:
         command = re.compile(r"addx (-?\d+)$")
         for line in f:
             match = command.match(line)

@@ -4,7 +4,7 @@ from collections import deque
 def main():
     input_map = []
     end = None
-    with open("12/input") as f:
+    with open("input") as f:
         for x, line in enumerate(f):
             row = []
             for y, c in enumerate(line.rstrip()):

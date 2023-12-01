@@ -1,6 +1,6 @@
 def main():
     grid = []
-    with open("8/input") as f:
+    with open("input") as f:
         for line in f:
             row = []
             for char in line.rstrip():

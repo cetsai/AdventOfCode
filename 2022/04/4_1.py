@@ -1,6 +1,6 @@
 def main():
     total = 0
-    with open("4/input") as f:
+    with open("input") as f:
         for line in f:
             range1, range2 = line.rstrip().split(",")
             min1, max1 = [int(s) for s in range1.split("-")]

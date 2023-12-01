@@ -15,7 +15,7 @@ def main():
 
     total = 0
 
-    with open("2/input") as f:
+    with open("input") as f:
         for line in f:
             first, second = [mapping[c] for c in line.split()]
             total += sorted(scores[first])[second]

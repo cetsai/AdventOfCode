@@ -43,7 +43,7 @@ def main():
     name_map: dict[str, int] = {}
     valves: list[Valve] = []
     index = 0
-    with open("16/testinput") as f:
+    with open("testinput") as f:
         for line in f:
             valve_names = valve_name.findall(line)
             rate = int(re.search("\d+", line).group())
@@ -66,7 +66,8 @@ def main():
         for j in range(len(max_flow_array)):
             best_total, valve_open_durations = max_flow_array[j]
             for neighbor in valves[j].connections:
-                if name_map[neighbor]
+                if name_map[neighbor]:
+                    pass
 
     
     

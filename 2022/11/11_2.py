@@ -38,7 +38,7 @@ def test(divisor, true_res, false_res):
 
 def main():
     monkeys = []
-    with open("11/input") as f:
+    with open("input") as f:
         input_iter = it.zip_longest(*([iter(f)] * 7), fillvalue="")
         for lines in input_iter:
             monkey = Monkey()

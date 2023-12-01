@@ -1,7 +1,7 @@
 def main():
     total = 0
 
-    with open("3/input") as f:
+    with open("input") as f:
         for line in [l.rstrip() for l in f]:
             first = line[:len(line)//2]
             second = line[len(line)//2:]

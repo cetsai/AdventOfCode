@@ -41,7 +41,7 @@ def compare_lists(left_list, right_list):
 
 def main():
     sum = 0
-    with open("13/input") as f:
+    with open("input") as f:
         iterators = [iter(f)] * 3
         for idx, (first, second, _) in enumerate(it.zip_longest(*iterators, fillvalue=""), start=1):
             left = parse_list(iter(first.removeprefix("[").rstrip()))

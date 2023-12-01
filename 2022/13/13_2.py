@@ -40,7 +40,7 @@ def compare_lists(left_list, right_list):
 
 def main():
     packets = [[[2]], [[6]]]
-    with open("13/input") as f:
+    with open("input") as f:
         for line in map(str.rstrip, f):
             if not line:
                 continue

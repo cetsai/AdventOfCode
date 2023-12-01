@@ -9,7 +9,7 @@ def readInput(filesystem):
     
     cwd = ["/"]
 
-    with open("7/input") as f:
+    with open("input") as f:
         for line in f:
             if line[0] == "$":
                 match = cmd.match(line)

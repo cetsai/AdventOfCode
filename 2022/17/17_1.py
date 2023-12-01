@@ -1,5 +1,6 @@
 import numpy as np
 import itertools
+
 def main():
     shapes = [
         np.array([[0,0], [1,0], [2,0], [3,0]]),
@@ -10,7 +11,7 @@ def main():
         ]
     
     jets = []
-    with open("17/input") as f:
+    with open("input") as f:
         line = f.readline()
         for c in line.rstrip():
             jets.append(c)

@@ -11,7 +11,7 @@ def main():
         ]
     
     jets = []
-    with open("17/input") as f:
+    with open("input") as f:
         line = f.readline()
         for c in line.rstrip():
             jets.append(c)

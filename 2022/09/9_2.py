@@ -2,7 +2,7 @@ import re
 import numpy as np
 
 def main():
-    with open("9/input") as f:
+    with open("input") as f:
         direction_map = {
             "U": [0, 1],
             "D": [0, -1],

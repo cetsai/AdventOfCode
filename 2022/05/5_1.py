@@ -1,7 +1,7 @@
 import re
 
 def readInput(stacks, commands):
-    with open("5/input") as f:
+    with open("input") as f:
         lines = iter(f)
         for line in map(str.rstrip, lines):
             if not line:

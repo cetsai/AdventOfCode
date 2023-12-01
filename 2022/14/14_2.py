@@ -20,7 +20,7 @@ def main():
     paths = []
     x_min = x_max = 500
     y_max = 0
-    with open("14/input") as f:
+    with open("input") as f:
         for line in map(str.rstrip, f):
             path = []
             for coord in line.split("->"):

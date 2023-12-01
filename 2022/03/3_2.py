@@ -1,6 +1,6 @@
 def main():
     total = 0
-    with open("3/input") as f:
+    with open("input") as f:
         for elves in zip(*([iter(f)] * 3), strict=True):
             elves = [elf.rstrip() for elf in elves]
             [badge] = set(elves[0]) & set(elves[1]) & set(elves[2])

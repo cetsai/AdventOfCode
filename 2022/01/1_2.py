@@ -2,7 +2,7 @@ def main():
     elves = []
     calories = []
 
-    with open("1/input") as f:
+    with open("input") as f:
         for line in f:
             if(line.rstrip() == ""):
                 elves.append(calories)

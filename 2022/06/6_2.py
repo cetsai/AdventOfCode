@@ -1,5 +1,5 @@
 def main():
-    with open("6/input") as f:
+    with open("input") as f:
         window = [""] * 14
         for index, char in enumerate(f.readline()):
             window[index % 14] = char
