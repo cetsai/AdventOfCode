@@ -1,8 +1,8 @@
 """
 Same as part 1, except digits can be spelled out e.g. "one" = "1"
 """
-
 import re
+
 
 def main():
     # keeping first and last letters to handle cases like "twone"
@@ -25,7 +25,6 @@ def main():
                line = line.replace(old, new)
             digits = list(map(int, re.findall(r"\d", line)))
             sum += (digits[0] * 10) + digits[-1]
-            
     print(sum)
 
 
