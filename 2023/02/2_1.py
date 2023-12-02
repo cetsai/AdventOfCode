@@ -8,9 +8,9 @@ the sum of the game numbers of these 'possible' games.
 
 This is a simple exercise in parsing the input string and comparing the
 numbers drawn for each color with the total of that color in the bag. 
-The input separates the draws into sets, where each set can have a draw
-for each color, but this has no impact on the result, so we can treat
-draws as independent.
+The input separates the draws into sets, where each set can have up to
+one draw for each color, but this has no impact on the result, so we can
+treat draws as independent.
 """
 import re
 
