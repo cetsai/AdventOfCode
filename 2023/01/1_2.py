@@ -1,11 +1,18 @@
 """
 Same as part 1, except digits can be spelled out e.g. "one" = "1"
+
+My solution uses the same method as part 1, but I preprocess each line
+by replacing spelled out digits with their corresponding numerical 
+character.
+
+I also sandwich this with the first and last character of each spelled 
+out string (e.g. 'seven' = 's7n'), to handle cases where the a letter in
+the input is both the first and last letter of a spelled out digit.
 """
 import re
 
 
 def main():
-    # keeping first and last letters to handle cases like "twone"
     digit_map = {
         "one": "o1e",
         "two": "t2o",
