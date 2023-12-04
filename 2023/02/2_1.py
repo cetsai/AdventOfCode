@@ -24,7 +24,7 @@ def main():
     game_pattern = re.compile(r"Game (\d+): ")
     draw_pattern = re.compile(r"(?:(?P<num>\d+) "
                               r"(?P<color>(?:red)|(?:blue)|(?:green)))+")
-    sum = 0
+    result = 0
 
     with open("input") as f:
         for line in f:
@@ -34,8 +34,8 @@ def main():
                 if int(num) > bag[color]:
                     break
             else:
-                sum += game
-    print(sum)
+                result += game
+    print(result)
 
 
 if __name__ == "__main__":

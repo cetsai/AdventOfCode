@@ -1,4 +1,6 @@
 """
+Find powers of minimal sets
+
 This time instead of seeing if the game is possible, we need to find the
 minimal set of cubes in the bag needed to make each game possible. For
 each game, we then multiply the numbers of cubes of each color in this
@@ -17,7 +19,7 @@ from functools import reduce
 def main():
     draw_pattern = re.compile(r"(?:(?P<num>\d+) "
                               r"(?P<color>(?:red)|(?:blue)|(?:green)))+")
-    sum = 0
+    result = 0
 
     with open("input") as f:
         for line in f:
@@ -27,8 +29,8 @@ def main():
                 num = int(num_str)
                 if int(num) > bag[color]:
                     bag[color] = num
-            sum += reduce(lambda x, y: x * y, bag.values())
-    print(sum)
+            result += reduce(lambda x, y: x * y, bag.values())
+    print(result)
 
 
 if __name__ == "__main__":
