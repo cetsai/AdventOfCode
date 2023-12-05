@@ -1,5 +1,5 @@
-# AdventOfCode_2022
+# AdventOfCode
 
-My solutions for Advent of Code 2022. Planning on using python.
+My solutions for Advent of Code
 
-https://adventofcode.com/2022/
+https://adventofcode.com/
