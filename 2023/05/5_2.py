@@ -4,7 +4,7 @@ which apply addition to an input domain. This way, combining mappings
 becomes conceptually easier as it boils down to a range overlap problem
 with some addition for the intersection.
 
-if we always use the range with the lowest start first, we have 3 cases:
+If we always use the range with the lowest start first, we have 3 cases:
 -===--------
 ------===---
 B.min > A.max
@@ -41,7 +41,7 @@ class MapEntry:
         self.destination = range(dest_start, dest_start + length)
 
     @staticmethod
-    def map_entrycmp(left: MapEntry, right: MapEntry)
+    def compare(left: MapEntry, right: MapEntry):
         if left.source[0] < right.source[0]:
             return -1
         if right.source[0] < left.source[0]:
@@ -59,8 +59,13 @@ class Map:
     
     @staticmethod
     def combine(left: Map, right: Map):
-        combined_ranges = sorted(left.entries + right.entries)
-        pass
+        combined_ranges = left.entries + right.entries
+        combined_ranges.sort(key=cmp_to_key(MapEntry.compare))
+        result_ranges = []
+        a,b = combined_ranges[0:2]
+        while True:
+            break
+        return Map(entries=result_ranges)
 
     def map(self, source_value: int) -> int:
         for entry in self.entries:
@@ -83,7 +88,9 @@ def main():
             if map_values:
                 reading_map = True
                 dest, source, length = map_values
-                current_map.entries.append(MapEntry(dest, source, length))
+                current_map.entries.append(
+                    MapEntry(dest, source, length)
+                )
             elif reading_map:
                 reading_map = False
                 almanac.append(current_map)
@@ -98,3 +105,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    

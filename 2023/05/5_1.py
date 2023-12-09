@@ -35,7 +35,9 @@ def main():
             if map_values:
                 reading_map = True
                 dest, source, length = map_values
-                current_map.entries.append(MapEntry(dest, source, length))
+                current_map.entries.append(
+                    MapEntry(dest, source, length)
+                )
             elif reading_map:
                 reading_map = False
                 almanac.append(current_map)
